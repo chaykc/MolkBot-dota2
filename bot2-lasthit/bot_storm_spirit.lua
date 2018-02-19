@@ -8,7 +8,6 @@ This bot has precisely 2 actions:
 -enter "wait" mode which is essentially to just maintain attack range distance from the
   lowest HP creep.
   
-The states are somewhat more involved than storm spirit 1.
 The state parameters:
 
 Projectile Position
@@ -59,12 +58,12 @@ Rewards and Punishments:
   Otherwise I think storm will just constantly attack the creep as there is
   very little reason not to. Last hits are determined as follows:
   
-  A creep dies and storm spirit's last hit count goes up
+  Storm spirit's last hit count goes up
   
   An attack that damages but does not kill the creep will be determined as:
   
   Last frame a projectile was airborne and this frame the projectile is gone,
-  but the creep is still alive and WasRecentlyDamagedByHero returns true.
+  but the creep is still alive
   
 Extra Notes:
 
